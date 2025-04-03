@@ -20,8 +20,6 @@ namespace SimpleAds.Web.Controllers
                 ids = Request.Cookies["AdIds"].Split(',').ToList();
             }
 
-
-
             var vm = new HomePageViewModel
             {
                 Ads = ads.Select(ad => new AdViewModel
